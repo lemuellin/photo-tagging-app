@@ -37,3 +37,8 @@
 ### Attribute
 1. Image by u/AnnikaBrandow
 https://www.reddit.com/r/wimmelbilder/comments/k5a98e/waterpark_by_me/
+
+TODO:
+1. deploy to github
+2. read me document
+3. read other's code
