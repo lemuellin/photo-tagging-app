@@ -1,11 +1,12 @@
 import { db } from "../firestore";
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, connectFirestoreEmulator, getDocs } from 'firebase/firestore';
 import placeMarker from "./placeMarker";
 
 const checkCoordinates = async (pos) => {
     const coordinatesSnapshot = await getDocs(collection(db, "Coordinates"));
     const coordinatesList = coordinatesSnapshot.docs.map((coordinate) => [coordinate.id, coordinate.data()]);
 
+    // original image: 3407 x 1500 px
     let pointerX = Number(document.querySelector('.target').style.left.slice(0,-2))  + window.innerWidth * 5 / 100;
     let pointerY = Number(document.querySelector('.target').style.top.slice(0,-2))  + window.innerWidth * 5 / 100;
     let centerX = coordinatesList[pos][1].X / 1500 * window.innerWidth;

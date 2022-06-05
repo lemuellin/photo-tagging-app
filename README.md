@@ -3,31 +3,34 @@
 ## Project Overview
 
 ### Description
-<!-- A simple shopping cart React application. -->
-<!-- [Live Demo](https://lemuellin.github.io/shopping-cart/) :point_left: -->
+A Photo Tagging Game React application.
+[Live Demo](https://lemuellin.github.io/photo-tagging-app/) :point_left:
 
 
 ### Features
-<!-- - An eCommerce website with a fully functional shopping cart.
-- Add and remove products from the shopping cart
-- Clean, minimalist UI design
-- Tested through React Test Library -->
+- Real-time character verification
+- Real-time game over verification
+- Secure game updates using Firebase cloud functions
+- Use of firebase-firestore for a live back end database
+
 
 ### Screenshots
-<!-- #### Shop Page
-![image](/src/asset/screenshot/Shop%20Page.png)
-#### Cart Page
-![image](/src/asset/screenshot/Cart%20Page.png) -->
+#### Welcome Page
+![image](/src/asset/screenshot/welcome.png)
+#### Game Play
+![image](/src/asset/screenshot/game.png)
+#### Leaderboard
+![image](/src/asset/screenshot/leaderboard.png)
 
 ## Development
 
 ### Frameworks
-<!-- - Web Framework
-	- [React](https://reactjs.org/) -->
+- Web Framework
+	- [React](https://reactjs.org/)
 
 ### Tools
-<!-- - React Router
-- Jest -->
+- React Router
+- Firebase's Firestore - Scalable, flexible NoSQL database for web, mobile and server development.
 
 ### Future Development
 <!-- 1. Animation: When pressed "Add to Cart" button, show animation on the cart/number count. (useEffect)
@@ -37,8 +40,3 @@
 ### Attribute
 1. Image by u/AnnikaBrandow
 https://www.reddit.com/r/wimmelbilder/comments/k5a98e/waterpark_by_me/
-
-TODO:
-1. deploy to github
-2. read me document
-3. read other's code

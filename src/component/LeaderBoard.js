@@ -1,24 +1,21 @@
 import '../style/LeaderBoard.css';
-import getScore from '../functions/getScore';
+import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import sendScore from '../functions/sendScore';
+import getScore from '../functions/getScore';
+import uniqid from 'uniqid';
 
 const LeaderBoard = () => {
+    const [highscore, setHighscore] = useState([]);
     const location = useLocation();
 
-    let scoreList = getScore();
-    scoreList.then((data) => {
-        const first = document.querySelector('.first');
-        const second = document.querySelector('.second');
-        const third = document.querySelector('.third');
-        const fourth = document.querySelector('.fourth');
-        const fifth = document.querySelector('.fifth');
-        first.textContent = `1. ${data[0][0]}: ${data[0][1].score} seconds`;
-        second.textContent = `2. ${data[1][0]}: ${data[1][1].score} seconds`;
-        third.textContent = `3. ${data[2][0]}: ${data[2][1].score} seconds`;
-        fourth.textContent = `4. ${data[3][0]}: ${data[3][1].score} seconds`;
-        fifth.textContent = `5. ${data[4][0]}: ${data[4][1].score} seconds`;
-    });
+    useEffect(() => {
+        const updateScore = async () => {
+            let scoreList = await getScore();
+            setHighscore(scoreList);    
+        }
+        updateScore();
+    },[]);
 
     const submit = () => {
         // add to Firebase
@@ -47,11 +44,13 @@ const LeaderBoard = () => {
             <div className='topPlayers'>
                 <ol>
                     <h3>Top Players</h3>
-                    <li className='first'></li>
-                    <li className='second'></li>
-                    <li className='third'></li>
-                    <li className='fourth'></li>
-                    <li className='fifth'></li>
+                    {highscore.map(leader => {
+                        return(
+                            <li key={uniqid()}>
+                                {leader.name}: {leader.score} seconds
+                            </li>
+                        )
+                    })}
                 </ol>
             </div>
             <button type='button' onClick={restart}>Restart</button>

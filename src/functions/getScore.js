@@ -7,7 +7,9 @@ const getScore = async () => {
     const leaderboardQuery = query(leaderboardRef, orderBy('score', 'asc'), limit(5));
     const querySnapshot = await getDocs(leaderboardQuery);
     querySnapshot.forEach(player => {
-        scoreList.push([player.id, player.data()]);
+        let scoreString = JSON.stringify(player.data().score);
+        let score = JSON.parse(scoreString);
+        scoreList.push({name: player.id, score: score});
     });
     return scoreList;
 }
