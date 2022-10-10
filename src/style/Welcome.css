@@ -18,7 +18,10 @@
     background-color: black;
     width: 100vw;
     height: 100vh;
+    min-width:360px;
+    min-height: 650px;
     gap: 40px;
+    padding: 5rem;
 }
 
 .start{
@@ -36,7 +39,7 @@
     opacity: 1;
 }
 
-img{
+.welcomeImg{
     width: 20vw;
 }
 
@@ -50,6 +53,26 @@ img{
     gap: 30px;
 }
 
-h3{
+.welcomeName{
     justify-self: center;
+}
+
+@media(max-width: 520px){
+    .welcome{
+        height: auto;
+    }
+
+    .imgTable{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .welcomeName{
+        display: none;
+    }
+
+    .welcomeImg{
+        width: 15rem;
+    }
 }

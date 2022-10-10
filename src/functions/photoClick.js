@@ -3,7 +3,7 @@ let count = 0;
 const photoClick = (e) => {
     const target = document.querySelector('.target');
     if(count%2 === 0){
-        let shift = window.innerWidth * 5 / 100;
+        let shift = 75;
         target.style.display = 'flex';
         target.style.left = `${e.nativeEvent.offsetX - shift}px`;
         target.style.top = `${e.nativeEvent.offsetY - shift}px`;

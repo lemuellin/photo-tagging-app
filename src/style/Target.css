@@ -12,20 +12,21 @@
 
 .target{
     display: none;
-    width: 20vw;
-    height: 10vw;
+    /* width: 20vw;
+    height: 10vw; */
     position: absolute;
+    flex-direction: column;
 }
 
 .targetBox{
-    width: 10vw;
-    height: 10vw;
+    width: 150px;
+    height: 150px;
     border: 8px red dashed;
 }
 
 .dropdown{
-    width: 10vw;
-    height: 10vw;
+    width: 150px;
+    height: 135px;
     background-color: lightgray;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -35,6 +36,7 @@
 }
 
 .ddOption{
-    width: 10vw;
-    height: 3.3vw;
+    width: 150px;
+    height: 45px;
+    font-size: large;
 }

@@ -10,12 +10,12 @@ const Welcome = () => {
             <h1>Oh no, you are lost in the WooHoo Water Park!</h1>
             <h2>Please find your friends, make sure to memorize how they look before clicking START.</h2>
             <div className='imgTable'>
-                <img alt='Octopus' src={Octopus}/>
-                <img alt='Turtle' src={Turtle}/>
-                <img alt='Hippo' src={Hippo}/>
-                <h3>Mr. Octopus</h3>
-                <h3>Murray the Turtle</h3>
-                <h3>Ms. Hippo</h3>
+                <img className="welcomeImg" alt='Octopus' src={Octopus}/>
+                <img className="welcomeImg" alt='Turtle' src={Turtle}/>
+                <img className="welcomeImg" alt='Hippo' src={Hippo}/>
+                <h3 className="welcomeName">Mr. Octopus</h3>
+                <h3 className="welcomeName">Turtle</h3>
+                <h3 className="welcomeName">Ms. Hippo</h3>
             </div>
             <Link to='/game'>
                 <button className='start'>START</button>

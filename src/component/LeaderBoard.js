@@ -8,6 +8,7 @@ import uniqid from 'uniqid';
 const LeaderBoard = () => {
     const [highscore, setHighscore] = useState([]);
     const location = useLocation();
+    const [updateBoard, setUpdateBoard] = useState(true);
 
     useEffect(() => {
         const updateScore = async () => {
@@ -15,13 +16,15 @@ const LeaderBoard = () => {
             setHighscore(scoreList);    
         }
         updateScore();
-    },[]);
+    },[updateBoard]);
 
     const submit = () => {
         // add to Firebase
         const name = document.querySelector('.userInput').value;
         const score = {score: location.state.score};
-        sendScore(name, score);
+        if(updateBoard)sendScore(name, score);
+
+        setUpdateBoard(false);
 
         const submitButton = document.querySelector('.submit');
         submitButton.classList.add('clicked');
