@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/photo-tagging-app/static/css/main.fb389bad.css",
-    "main.js": "/photo-tagging-app/static/js/main.b300e662.js",
+    "main.css": "/photo-tagging-app/static/css/main.4e861565.css",
+    "main.js": "/photo-tagging-app/static/js/main.68e47d92.js",
     "static/media/WaterPark.jpeg": "/photo-tagging-app/static/media/WaterPark.8c5ba9ca4bf11a23403a.jpeg",
     "static/media/Turtle.jpeg": "/photo-tagging-app/static/media/Turtle.cf175b8e03a4f0ffda02.jpeg",
     "static/media/Hippo.jpeg": "/photo-tagging-app/static/media/Hippo.bad3c0f76e8a8961a5e7.jpeg",
     "static/media/Octopus.jpeg": "/photo-tagging-app/static/media/Octopus.82bf275e1b621f382a22.jpeg",
     "index.html": "/photo-tagging-app/index.html",
-    "main.fb389bad.css.map": "/photo-tagging-app/static/css/main.fb389bad.css.map",
-    "main.b300e662.js.map": "/photo-tagging-app/static/js/main.b300e662.js.map"
+    "main.4e861565.css.map": "/photo-tagging-app/static/css/main.4e861565.css.map",
+    "main.68e47d92.js.map": "/photo-tagging-app/static/js/main.68e47d92.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb389bad.css",
-    "static/js/main.b300e662.js"
+    "static/css/main.4e861565.css",
+    "static/js/main.68e47d92.js"
   ]
 }
