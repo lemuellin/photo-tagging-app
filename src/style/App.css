@@ -27,15 +27,11 @@
     align-items: center;
     background-color: black;
     position: relative;
-    /* width:100vw; */
     min-width:1440px;
-    /* min-width: 400px; */
 }
 
 .background{
-    /* width: 2560px; */
-    min-width:1440px;
-    /* min-width: 400px; */
+    width:1440px;
 }
 
 .markerHippo, .markerTurt, .markerOct{
