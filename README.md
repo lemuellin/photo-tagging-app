@@ -1,5 +1,5 @@
 # Where's Walter?
-A Photo Tagging Game created with React, using Firebase to keep leaderboard scores.
+A Photo Tagging Game created with React, using Firebase to keep leaderboard scores.  
 [Live Demo](https://lemuellin.github.io/photo-tagging-app/) :point_left:
 
 <img src="./src/asset/screenshot/wheresWalter.gif">
