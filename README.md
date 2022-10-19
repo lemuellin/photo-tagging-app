@@ -2,7 +2,7 @@
 A Photo Tagging Game created with React, using Firebase to keep leaderboard scores.  
 [Live Demo](https://lemuellin.github.io/photo-tagging-app/) :point_left:
 
-<img src="./src/asset/screenshot/wheresWalter.gif">
+<img src="./src/asset/screenshot/wheresWalterCompressed.gif">
 
 ## Features
 -	Real-time character verification
