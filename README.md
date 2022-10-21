@@ -1,15 +1,11 @@
 # Where's Walter?
-A Photo Tagging Game created with React, using Firebase to keep leaderboard scores.  
+A React Photo Tagging Game using Firebase to keep leaderboard scores.  
 [Live Demo](https://lemuellin.github.io/photo-tagging-app/) :point_left:
 
 <img src="./src/asset/screenshot/wheresWalterCompressed.gif">
 
 ## Features
--	Real-time character verification
--	Real-time game over verification
--	Secure game updates using Firebase cloud functions
--	Use of Firebase Firestore for a live back end database
--	Server-side timestamps to measure the duration of games
+-	Real-time verification of characters, and game status with Firebase Firestore
 -	Global leaderboard without login
 -	Mobile Responsive
 
